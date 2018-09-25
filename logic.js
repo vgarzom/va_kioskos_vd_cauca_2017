@@ -1,7 +1,7 @@
 var target = d3.select("#target");
 
 var svg = d3.select("svg"),
-    margin = { top: 20, right: 20, bottom: 60, left: 40 },
+    margin = { top: 20, right: 20, bottom: 60, left: 60 },
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -46,6 +46,8 @@ function updateChart() {
         .style("text-anchor", "end")
         .attr("dx", "-.8em")
         .attr("dy", ".15em")
+        .style("font-family", "Dosis")
+        .style("font-size", "7pt")
         .attr("transform", function (d) {
             return "rotate(-65)";
         });
@@ -57,6 +59,14 @@ function updateChart() {
         .attr("id", "yaxis")
         .call(d3.axisLeft(y))
         .call(g => g.select(".domain").remove());
+
+    svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", margin.left - 55)
+        .attr("x", -1*height/2)
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("# Kioskos Vive Digital");
 
 
     if (poblation != 3) {

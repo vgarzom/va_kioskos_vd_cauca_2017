@@ -220,7 +220,7 @@ function sortChange() {
 //Lectura de los datos
 
 d3.csv(
-    "data.csv",
+    "https://rawgit.com/vgarzom/va_kioskos_vd_cauca_2017/master/data.csv",
     (d) => {
         kioskos.push(d);
     }

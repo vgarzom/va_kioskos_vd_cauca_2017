@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kioskos vive digital</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Kioskos vive digital instalados en el departamento del Cauca hasta agosto de 2017</h1>
+    <p>Los Kioscos Vive Digital son puntos de acceso comunitario a Internet para los niños, jóvenes y adultos en zonas rurales de más de 100 habitantes, ubicados en las zonas más alejadas de Colombia, donde pueden conectarse a internet y recibir capacitaciones gratuitas en uso y apropiación de las TIC.</p>
+    <p>A partir de datos abiertos donde se registran los kioskos instalados hasta agosto de 2017 en el departamento del Cauca, se presentan la cantidad de estos instalados en cada municipio.</p>
+    <span>Población: </span>
+    <select id="poblationdd" onchange="poblationChange()">
+        <option value="0" selected="selected">Mayoritaria</option>
+        <option value="1">Indígena</option>
+        <option value="2">Afro</option>
+        <option value="3">Todos</option>
+    </select>
+    <span>Ordenar: </span>
+    <select id="sortdd" onchange="sortChange()">
+        <option value="0" selected="selected">por valor</option>
+        <option value="1">alfabéticamente</option>
+    </select>
+    <svg width="600" height="500"></svg>
+    <div id="target"></div>
+    <p><b>Hecho por:</b> Víctor Garzón Marín</p>
+    <p><b>Datos obtenidos de:</b>
+        <a href="https://www.datos.gov.co/Educaci-n/Kioscos-Vive-digital-del-Departamento-del-Cauca/4sk6-8wqf">datos abiertos colombia</a></p>
+    <script src="http://d3js.org/d3.v5.min.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>

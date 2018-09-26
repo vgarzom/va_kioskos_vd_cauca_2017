@@ -1,6 +1,6 @@
-# Kioskos vive digital Cauca hasta agosto 2017
+# Kioscos vive digital Cauca hasta agosto 2017
 Los Kioscos Vive Digital son puntos de acceso comunitario a Internet para los niños, jóvenes y adultos en zonas rurales de más de 100 habitantes, ubicados en las zonas más alejadas de Colombia, donde pueden conectarse a internet y recibir capacitaciones gratuitas en uso y apropiación de las TIC.
-A partir de datos abiertos donde se registran los kioskos instalados hasta agosto de 2017 en el departamento del Cauca, se presentan la cantidad de estos instalados en cada municipio.
+A partir de datos abiertos donde se registran los kioscos instalados hasta agosto de 2017 en el departamento del Cauca, se presentan la cantidad de estos instalados en cada municipio.
 
 ## Objetivo:
 - principalmente visualizar estos datos. 
